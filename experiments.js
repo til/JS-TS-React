@@ -1,4 +1,4 @@
-const greeting = 'hi';
-console.log(greeting)
+const greeting = 'Hi, ';
 const myName = 'Giulia Zeni';
-console.log(myName);
+const fullGreeting = `${greeting} ${myName}. How are you?`;
+console.log(fullGreeting);
