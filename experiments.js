@@ -48,7 +48,7 @@ while (peopleAtYourParty < 10) {
 console.log(peopleAtYourParty);
 
 let galsAtYourParty = 0;
-for (let i = 0; i < 10; i++) { // Common way of writing for loops in JS
+for (let i = 0; i < 10; i++) { // Common way of writing for loops in JS, I can only write variables in there
   galsAtYourParty++;
 }
 console.log(galsAtYourParty);
