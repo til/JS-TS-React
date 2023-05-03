@@ -37,3 +37,25 @@ if (friendsAtYourParty === 0) {
 } else {
   console.log('Let\'s dance!');
 }
+
+// Loops
+
+let peopleAtYourParty = 0;
+while (peopleAtYourParty < 10) {
+  console.log('Another friend joined your party');
+  peopleAtYourParty += 1; // or peopleAtYourParty++
+}
+console.log(peopleAtYourParty);
+
+let galsAtYourParty = 0;
+for (let i = 0; i < 10; i++) { // Common way of writing for loops in JS
+  galsAtYourParty++;
+}
+console.log(galsAtYourParty);
+
+/* We could do this starting at 10 and going down to 0, so:
+let galsAtYourParty = 10;
+for (let i = 10; i > 0; i--) {
+    galsAtYourParty--;
+  }
+*/
