@@ -59,3 +59,13 @@ for (let i = 10; i > 0; i--) {
     galsAtYourParty--;
   }
 */
+
+// Builtins
+
+number = 5.1;
+const roundedNumber = Math.ceil(number);
+console.log(roundedNumber); // 6
+
+number1 = 5.3;
+const roundedNumber1 = Math.round(number1);
+console.log(roundedNumber1); // 5
