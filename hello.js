@@ -39,3 +39,4 @@ myOrigin(myHomeCity, myHomeRegion, myHomeCountry);
 myOrigin('Bergamo', 'Lombaria', myHomeCountry);
 
 // On line 22 we returned something, on line 35 we didn't. We don't necessarily need to return. We can just call the functions with different parameters (in parenthesis).
+

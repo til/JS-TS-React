@@ -139,10 +139,39 @@ const me = {
     last: 'Zeni',
   },
   location: {
+    streetNumber: 47,
     city: 'Berlin',
     country: 'Germany',
+    zipCode: 10409,
   },
 };
 
 console.log(me.name.last); // Zeni
 console.log(me.location.city); // Berlin
+
+// 'This' keyword
+
+const you = {
+  name: {
+    first: 'Vince',
+    last: 'Zeni'
+  },
+  location: {
+    streetNumber: 47,
+    streetName: Ostseestraße,
+    city: 'Berlin',
+    country: 'Germany',
+    zipCode: 10409,
+  },
+  getAddress() {
+    return `
+    ${this.name.first} ${this.name.last}
+    ${this.location.streetName} ${this.location.streetNumber}
+    ${this.zipCode}, ${this.location.city}
+    ${this.location.country}
+    `;
+  },
+};
+
+console.log(you.getAddress()); /* throws an error: Uncaught SyntaxError: redeclaration of const you
+<anonymous> debugger eval code:1 */
