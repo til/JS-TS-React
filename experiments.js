@@ -86,10 +86,63 @@ console.log(Date.now());
 // Objects
 
 const person = {
-  name: 'Giulia Zeni',
+  name: 'Giulia Zeni', // name, city, state... are PROPERTIES of this object and they are the key, after the colon is the value
   city: 'Berlin',
   state: 'Germany',
   favouriteFood: 'Hummus',
   wantsHummusRightNow: true,
   portionsOfHummusWanted: 10,
 };
+console.log(person); // Object { name: "Giulia Zeni", city: "Berlin", state: "Germany", favouriteFood: "Hummus", wantsHummusRightNow: true, portionsOfHummusWanted: 10 }
+console.log(person.name); // Giulia Zeni
+
+// Objects and if statements
+
+const person1 = {
+  name: 'Angie',
+  ageRange: '25-35',
+};
+const person2 = {
+  name: 'Francesca',
+  ageRange: '65-75',
+};
+
+const suggestMusic = (person) => {
+  if (person.ageRange === '25-35') {
+    console.log('Try Daft Punk');
+  } else if (person.ageRange === '65-75') {
+  console.log('Try Johnny Cash');
+  } else {
+    console.log('Try David Bowie, everyone likes him!');
+  };
+}
+
+suggestMusic(person1);
+suggestMusic(person2);
+
+// A function inside an Object
+
+const dog = {
+  name: 'Luna',
+  speak() {
+    console.log('woof woof');
+  },
+};
+
+dog.speak();
+
+// Nested Objects
+
+const me = {
+  name: {
+    first: 'Giulia',
+    last: 'Zeni',
+  },
+  location: {
+    city: 'Berlin',
+    country: 'Germany',
+  },
+};
+
+console.log(me.name.last); // Zeni
+console.log(me.location.city); // Berlin
