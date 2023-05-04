@@ -69,3 +69,27 @@ console.log(roundedNumber); // 6
 number1 = 5.3;
 const roundedNumber1 = Math.round(number1);
 console.log(roundedNumber1); // 5
+
+/* */
+
+const testStringOne = "The quick brown fox jumps over the lazy dog";
+const testStringTwo = "Mirror, mirror on the wall, don't say it cause I know I'm cute";
+const stringLookFor = 'cute';
+
+console.log(testStringOne.includes(stringLookFor)); // false
+console.log(testStringTwo.includes(stringLookFor)); // true
+
+// How many milliseconds have elapsed since Jan 1 1970?
+
+console.log(Date.now());
+
+// Objects
+
+const person = {
+  name: 'Giulia Zeni',
+  city: 'Berlin',
+  state: 'Germany',
+  favouriteFood: 'Hummus',
+  wantsHummusRightNow: true,
+  portionsOfHummusWanted: 10,
+};
