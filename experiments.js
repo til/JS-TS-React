@@ -188,6 +188,7 @@ console.log(daysOfTheWeek.join(' § ')); // Monday § Tuesday § Wedneday
 const courses = [
   { teacher: 'Will Sentance', course: 'JavaScript' },
   { teacher: 'Sarah Drasner', course: 'Intro to Vue' },
+  { teacher: 'Scott Moss', course: 'Node.js' },
 ];
 
 courses.push({ teacher: 'Jen Kramer', course: 'CSS'});
@@ -197,4 +198,42 @@ console.log(courses); /* 0: Object { teacher: "Will Sentance", course: "JavaScri
 ​
 2: Object { teacher: "Jen Kramer", course: "CSS" } */
 
-courses[2] = { teacher: 'Giulia Zeni', course: 'Italian' }; // To replace the course at index 0 with a new object
+courses[0] = { teacher: 'Giulia Zeni', course: 'Italian' }; // To replace the course at index 0 with a new object
+courses[0].course = 'React'; // If I want to change just the course but not the teacher
+const jen = courses.pop(); // deletes the last course in the array, which is Jen's course (we had added it on line 194)
+console.log(jen); // { teacher: 'Jen Kramer', course: 'CSS'}
+console.log(courses.shift()); // removes the first course, Will's
+courses.unshift(jen); // Jen's course is now the first on the list
+
+// Looping through an array
+
+const cities = [
+  'Venice',
+  'Milan',
+  'Berlin',
+  'Oslo',
+  'Copenhagen',
+];
+
+// Loop method 1
+for (let i = 0; i < cities.length; i++) {
+  console.log(cities[i]); // What is the i there? It's actually the index. So console.log(cities[i])'s output would be 0 1 2 3 4
+};
+
+for (let i = 0; i < cities.length; i++) {
+  console.log(i, cities[i]); // The 'i' shows the index before the city name
+};
+
+// Loop method 2
+const logCity = (city) => {
+  console.log(city);
+};
+
+cities.forEach(logCity); // this runs the function logCity on each item of the array
+
+let timesCalled = 0;
+logCity = (city) => { // is this line correct? or do I need const?
+  console.log(timesCalled, city);
+  timesCalled++;
+};
+cities.forEach(logCity);
