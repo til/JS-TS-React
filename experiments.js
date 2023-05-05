@@ -175,3 +175,8 @@ const you = {
 
 console.log(you.getAddress()); /* throws an error: Uncaught SyntaxError: redeclaration of const you
 <anonymous> debugger eval code:1 */
+
+// Arrays
+
+const daysOfTheWeek = ['Monday', 'Tuesday', 'Wedneday']
+console.log(daysOfTheWeek[2]); // Wednesday
