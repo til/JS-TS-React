@@ -178,5 +178,23 @@ console.log(you.getAddress()); /* throws an error: Uncaught SyntaxError: redecla
 
 // Arrays
 
-const daysOfTheWeek = ['Monday', 'Tuesday', 'Wedneday']
+const daysOfTheWeek = ['Monday', 'Tuesday', 'Wedneday',];
 console.log(daysOfTheWeek[2]); // Wednesday
+console.log(daysOfTheWeek.length); // 3
+console.log(daysOfTheWeek.join(' § ')); // Monday § Tuesday § Wedneday
+
+/* An array of objects */
+
+const courses = [
+  { teacher: 'Will Sentance', course: 'JavaScript' },
+  { teacher: 'Sarah Drasner', course: 'Intro to Vue' },
+];
+
+courses.push({ teacher: 'Jen Kramer', course: 'CSS'});
+console.log(courses); /* 0: Object { teacher: "Will Sentance", course: "JavaScript" }
+​
+1: Object { teacher: "Sarah Drasner", course: "Intro to Vue" }
+​
+2: Object { teacher: "Jen Kramer", course: "CSS" } */
+
+courses[2] = { teacher: 'Giulia Zeni', course: 'Italian' }; // To replace the course at index 0 with a new object
