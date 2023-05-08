@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.chessboard {
+  width: min(100vh, 100vw);
+  height: min(100vh, 100vw); /* no matter how big the browser window is, the square will be resized correctly */
+  margin-left: auto;
+  margin-right: auto;
+  /* border: dashed greenyellow; */
+
+  display: grid;
+
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.chessboard > div {
+  border: 1px solid greenyellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square1:nth-child(odd) {
+  background-color: #00ccff;
+}
+
+.square1:nth-child(even) {
+  background-color: #0099ff;
+}
