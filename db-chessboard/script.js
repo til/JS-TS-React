@@ -5,6 +5,6 @@ document.onreadystatechange = () => {
 
     const selector = `.col-${start[0]}.row-${start[1]}`;
 
-    console.log("the selector is", selector);
+    document.querySelector(selector).classList.add("start");
   }
 };
