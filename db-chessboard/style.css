@@ -35,7 +35,7 @@ div:contains("example") {
   /* your styles here */
 }
 
-.row-8.col-a {
+.start {
   color: yellow;
 }
 
