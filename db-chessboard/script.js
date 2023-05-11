@@ -1,5 +1,9 @@
 document.onreadystatechange = () => {
   if (document.readyState === "interactive") {
-    console.log("do something");
+    const queryString = window.location.search;
+    const params = new URLSearchParams(queryString);
+    const start = params.get("start");
+
+    console.log("the start param is", start);
   }
 };
