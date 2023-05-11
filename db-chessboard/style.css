@@ -19,8 +19,6 @@ html {
 }
 
 .chessboard > div {
-  width: 80px;
-  height: 80px;
   margin: 0;
   padding: 0;
 }
@@ -30,6 +28,15 @@ html {
   align-items: center;
   justify-content: center;
   font-size: 35px;
+  color: black;
+}
+
+div:contains("example") {
+  /* your styles here */
+}
+
+.clicked {
+  color: yellow;
 }
 
 .square1:nth-child(odd) {
