@@ -3,7 +3,10 @@ document.onreadystatechange = () => {
     const params = new URL(document.location).searchParams;
     const start = params.get("start");
 
-    const selector = `.col-${start[0]}.row-${start[1]}`;
+    const col = start[0];
+    const row = start[1];
+
+    const selector = `.col-${col}.row-${row}`;
 
     document.querySelector(selector)?.classList.add("start");
   }
