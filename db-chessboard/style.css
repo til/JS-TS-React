@@ -35,7 +35,7 @@ div:contains("example") {
   /* your styles here */
 }
 
-.clicked {
+.row-8.col-a {
   color: yellow;
 }
 
