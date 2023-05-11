@@ -3,6 +3,8 @@ document.onreadystatechange = () => {
     const params = new URL(document.location).searchParams;
     const start = params.get("start");
 
-    console.log("the start param is", start);
+    const selector = `.col-${start[0]}.row-${start[1]}`;
+
+    console.log("the selector is", selector);
   }
 };
